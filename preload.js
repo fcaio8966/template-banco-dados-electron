@@ -1,4 +1,6 @@
-const{constextbridge,ipcRenderer, contextBridge} = require('electron')
+console.log ("carregou  o meu arquivo de preload")
+
+const{contextBridge,ipcRenderer} = require('electron')
 
 contextBridge.exposeInMainWorld("api",{
     cadastrarUsuario: (campoNome, campoEmail) => {
